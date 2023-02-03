@@ -11,7 +11,7 @@ function navbar() {
                         <div className="brand__header--text">{"<?Nanu>"}</div>
                     </a>
                     <input type="checkbox" id="nav" className="hidden" />
-                    <label className="nav-toggle">
+                    <label for="nav" className="nav-toggle">
                         <span></span>
                         <span></span>
                         <span></span>
