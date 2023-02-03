@@ -57,24 +57,25 @@
         .hello {
             font-size: 2.5em;
 
-        }
+            span {
+                animation: wobble linear infinite;
+                /* referring directly to the animation's @keyframe declaration */
+                animation-duration: 4s;
+                /* don't forget to set a duration! */
+            }
 
-        .highlight__text {
-            color: var(--landing-text-filter-primary);
-            font-weight: 800;
-            display: inline-block;
-            animation: pulse linear infinite;
-            /* referring directly to the animation's @keyframe declaration */
-            animation-duration: 4s;
-            /* don't forget to set a duration! */
-        }
-
-        .animate__animated.animate__bounce {
-            --animate-duration: 3s;
-            --animate-repeat: 2;
+            .animate__animated.animate__wobble {
+                --animate-duration: 6s;
+                --animate-repeat: 2;
+            }
         }
     }
 
+    .highlight__text {
+        color: var(--landing-text-filter-primary);
+        font-weight: 800;
+        display: inline-block;
+    }
 }
 
 .header__portfolio__banner {

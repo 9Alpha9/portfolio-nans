@@ -31,13 +31,18 @@ function LandingPages() {
                 <HeaderStyledLanding className="container py-3 px-8">
                     <section className="header__portfolio">
                         <div className="header__welcome flex flex-col">
-                            <h1 className="hello">Hi 👋</h1>
+                            <h1 className="hello ">
+                                Hi
+                                <span className="animate__animated animate__wobble animate-delay-3s inline-block">
+                                    👋
+                                </span>
+                            </h1>
                             <span className="header__name">
                                 My Name M. Aprilandi Nanu Dwi Firmansyah
                             </span>
                             <h1>
                                 I'm a{" "}
-                                <span className="highlight__text animate__animated animate__bounce animate__delay-3s">
+                                <span className="highlight__text">
                                     Backend Web Developers
                                 </span>
                             </h1>

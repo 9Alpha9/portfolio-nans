@@ -47,20 +47,22 @@
 .header__portfolio .header__welcome .hello {
   font-size: 2.5em;
 }
-.header__portfolio .header__welcome .highlight__text {
-  color: var(--landing-text-filter-primary);
-  font-weight: 800;
-  display: inline-block;
-  -webkit-animation: pulse linear infinite;
-          animation: pulse linear infinite;
+.header__portfolio .header__welcome .hello span {
+  -webkit-animation: wobble linear infinite;
+          animation: wobble linear infinite;
   /* referring directly to the animation's @keyframe declaration */
   -webkit-animation-duration: 4s;
           animation-duration: 4s;
   /* don't forget to set a duration! */
 }
-.header__portfolio .header__welcome .animate__animated.animate__bounce {
-  --animate-duration: 3s;
+.header__portfolio .header__welcome .hello .animate__animated.animate__wobble {
+  --animate-duration: 6s;
   --animate-repeat: 2;
+}
+.header__portfolio .highlight__text {
+  color: var(--landing-text-filter-primary);
+  font-weight: 800;
+  display: inline-block;
 }
 
 .header__portfolio__banner .profile__pictures {
