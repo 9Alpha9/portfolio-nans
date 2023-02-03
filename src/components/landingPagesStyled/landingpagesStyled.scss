@@ -1,11 +1,7 @@
 :root {
-    --landing-background-filter: ;
+    --landing-background-filter: #408C5E;
     --landing-text-filter-primary: #408C5E;
-}
-
-.wrapper__header {
-    background-color: var(--landing-background-filter);
-
+    --landing-head-filter-primary: #408C5E;
 }
 
 @media (min-width: 1000px) {
@@ -16,7 +12,7 @@
 
     .header__portfolio__banner {
         .profile__pictures {
-            border: solid var(--landing-text-filter-primary) 6px;
+            border: solid var(--landing-head-filter-primary) 6px;
             border-radius: 100%;
 
             img {
@@ -40,13 +36,14 @@
 
 .header__portfolio {
     flex-direction: row;
-    max-width: 1280px;
     font-family: 'Supreme', sans-serif;
     // height: 80vh;
     align-items: center;
     position: relative;
 
+
     .header__welcome {
+        justify-content: space-between;
         flex: 1 1 0;
 
         .header__name {
@@ -65,6 +62,16 @@
         .highlight__text {
             color: var(--landing-text-filter-primary);
             font-weight: 800;
+            display: inline-block;
+            animation: pulse linear infinite;
+            /* referring directly to the animation's @keyframe declaration */
+            animation-duration: 4s;
+            /* don't forget to set a duration! */
+        }
+
+        .animate__animated.animate__bounce {
+            --animate-duration: 3s;
+            --animate-repeat: 2;
         }
     }
 
@@ -75,7 +82,7 @@
     .profile__pictures {
         margin: 2rem 0;
         overflow: hidden;
-        border: solid var(--landing-text-filter-primary) 6px;
+        border: solid var(--landing-head-filter-primary) 6px;
 
         img {
             width: 100%;
@@ -108,15 +115,104 @@
     }
 
     .about__item {
+
         position: relative;
         font-size: 1em;
 
-        span {
+        .text {
+            font-size: 1.2em;
+        }
+
+        .uPreC90 {
             position: absolute;
             height: 3px;
             width: 100%;
-            background-color: var(--landing-text-filter-primary);
+            background-color: var(--landing-head-filter-primary);
 
+        }
+    }
+}
+
+.skills__container {
+    .skills__heading {
+        font-size: 2em;
+        font-weight: 500;
+        color: var(--landing-text-filter-primary);
+    }
+
+    .skill__name {
+        font-size: 1.2em;
+        position: relative;
+    }
+
+
+    .skills__item {
+        align-items: center;
+
+        .skills__item__bar {
+            height: 25px;
+
+            .xcUiT__bar {
+                background-color: var(--landing-background-filter);
+                display: block;
+                border-radius: 1em;
+                align-items: center;
+                text-align: center;
+            }
+
+            .bar__xcUL {
+                width: 300px;
+            }
+
+            .bar__rxCs {
+                width: 240px;
+            }
+
+            .bar__tRsa {
+                width: 220px;
+            }
+
+            .bar__fgDa {
+                width: 200px;
+            }
+
+            .bar__grFc {
+                width: 160px;
+            }
+        }
+    }
+}
+
+.education__excRt {
+    .heading__education_tlxSc {
+        font-size: 2em;
+        color: var(--landing-text-filter-primary);
+        font-weight: 500;
+    }
+
+    .education__item__gtxDa {
+        .education__name {
+            text-transform: uppercase;
+        }
+
+
+    }
+}
+
+.education__item {
+    .schools__name {
+        font-weight: 600;
+    }
+
+    .schools__item {
+        .schools__logo {
+            img {
+                height: 70px;
+                width: auto;
+                background-position: center center;
+                background-repeat: no-repeat;
+                object-fit: cover;
+            }
         }
     }
 }

@@ -1,10 +1,7 @@
 :root {
-  --landing-background-filter: ;
+  --landing-background-filter: #408C5E;
   --landing-text-filter-primary: #408C5E;
-}
-
-.wrapper__header {
-  background-color: var(--landing-background-filter);
+  --landing-head-filter-primary: #408C5E;
 }
 
 @media (min-width: 1000px) {
@@ -13,7 +10,7 @@
     flex-direction: column;
   }
   .header__portfolio__banner .profile__pictures {
-    border: solid var(--landing-text-filter-primary) 6px;
+    border: solid var(--landing-head-filter-primary) 6px;
     border-radius: 100%;
   }
   .header__portfolio__banner .profile__pictures img {
@@ -33,12 +30,12 @@
 }
 .header__portfolio {
   flex-direction: row;
-  max-width: 1280px;
   font-family: "Supreme", sans-serif;
   align-items: center;
   position: relative;
 }
 .header__portfolio .header__welcome {
+  justify-content: space-between;
   flex: 1 1 0;
 }
 .header__portfolio .header__welcome .header__name {
@@ -53,12 +50,23 @@
 .header__portfolio .header__welcome .highlight__text {
   color: var(--landing-text-filter-primary);
   font-weight: 800;
+  display: inline-block;
+  -webkit-animation: pulse linear infinite;
+          animation: pulse linear infinite;
+  /* referring directly to the animation's @keyframe declaration */
+  -webkit-animation-duration: 4s;
+          animation-duration: 4s;
+  /* don't forget to set a duration! */
+}
+.header__portfolio .header__welcome .animate__animated.animate__bounce {
+  --animate-duration: 3s;
+  --animate-repeat: 2;
 }
 
 .header__portfolio__banner .profile__pictures {
   margin: 2rem 0;
   overflow: hidden;
-  border: solid var(--landing-text-filter-primary) 6px;
+  border: solid var(--landing-head-filter-primary) 6px;
 }
 .header__portfolio__banner .profile__pictures img {
   width: 100%;
@@ -90,9 +98,71 @@
   position: relative;
   font-size: 1em;
 }
-.about__landing__section .about__item span {
+.about__landing__section .about__item .text {
+  font-size: 1.2em;
+}
+.about__landing__section .about__item .uPreC90 {
   position: absolute;
   height: 3px;
   width: 100%;
-  background-color: var(--landing-text-filter-primary);
+  background-color: var(--landing-head-filter-primary);
+}
+
+.skills__container .skills__heading {
+  font-size: 2em;
+  font-weight: 500;
+  color: var(--landing-text-filter-primary);
+}
+.skills__container .skill__name {
+  font-size: 1.2em;
+  position: relative;
+}
+.skills__container .skills__item {
+  align-items: center;
+}
+.skills__container .skills__item .skills__item__bar {
+  height: 25px;
+}
+.skills__container .skills__item .skills__item__bar .xcUiT__bar {
+  background-color: var(--landing-background-filter);
+  display: block;
+  border-radius: 1em;
+  align-items: center;
+  text-align: center;
+}
+.skills__container .skills__item .skills__item__bar .bar__xcUL {
+  width: 300px;
+}
+.skills__container .skills__item .skills__item__bar .bar__rxCs {
+  width: 240px;
+}
+.skills__container .skills__item .skills__item__bar .bar__tRsa {
+  width: 220px;
+}
+.skills__container .skills__item .skills__item__bar .bar__fgDa {
+  width: 200px;
+}
+.skills__container .skills__item .skills__item__bar .bar__grFc {
+  width: 160px;
+}
+
+.education__excRt .heading__education_tlxSc {
+  font-size: 2em;
+  color: var(--landing-text-filter-primary);
+  font-weight: 500;
+}
+.education__excRt .education__item__gtxDa .education__name {
+  text-transform: uppercase;
+}
+
+.education__item .schools__name {
+  font-weight: 600;
+}
+.education__item .schools__item .schools__logo img {
+  height: 70px;
+  width: auto;
+  background-position: center center;
+  background-repeat: no-repeat;
+  -o-object-fit: cover;
+     object-fit: cover;
 }/*# sourceMappingURL=landingpagesStyled.css.map */

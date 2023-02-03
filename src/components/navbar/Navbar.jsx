@@ -1,5 +1,6 @@
 import React from "react";
 import "./navbarStyles.css";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 function navbar() {
     return (
@@ -7,16 +8,10 @@ function navbar() {
             <div className="navigation__header">
                 <nav className="navbar">
                     <a className="brand" href="#">
-                        <figure className="brand__logo">
-                            <img
-                                src="/component/assets/bagian-logo.png"
-                                alt=""
-                            />
-                        </figure>
-                        <div className="brand__header--text">Logo</div>
+                        <div className="brand__header--text">{"<?Nanu>"}</div>
                     </a>
                     <input type="checkbox" id="nav" className="hidden" />
-                    <label for="nav" class="nav-toggle">
+                    <label className="nav-toggle">
                         <span></span>
                         <span></span>
                         <span></span>
