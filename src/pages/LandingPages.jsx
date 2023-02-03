@@ -4,7 +4,6 @@ import profilePictures from "../assets/photo/profile-pictures.jpg";
 import profilePictures2 from "../assets/photo/profile-pictures-2.jpg";
 
 export { profilePictures, profilePictures2 };
-
 import styled from "styled-components";
 import ProjectsPages from "./ProjectsPages";
 import EducationComp from "../components/EducationComp";
@@ -58,8 +57,9 @@ function LandingPages() {
                                     {"<php>"}
                                     <div className="code__dummy">
                                         {
-                                            "if (Auth::attempt([$this->username() => $request->me])) { "
+                                            "if (Auth::attempt([$this->username()=> $request->me]))"
                                         }
+                                        <br />
                                         {"$request->session()->regenerate();"}
                                         {"return redirect()->route('welcome');"}
                                     </div>
