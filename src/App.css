@@ -1,0 +1,9 @@
+:root {
+    --body-text-filter: #fff;
+    --body-background-filter: rgb(19, 18, 18);
+}
+
+body {
+    background-color: var(--body-background-filter);
+    color: var(--body-text-filter);
+}

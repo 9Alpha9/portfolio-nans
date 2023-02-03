@@ -1,0 +1,122 @@
+:root {
+    --landing-background-filter: ;
+    --landing-text-filter-primary: #408C5E;
+}
+
+.wrapper__header {
+    background-color: var(--landing-background-filter);
+
+}
+
+@media (min-width: 1000px) {
+    .header__portfolio {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .header__portfolio__banner {
+        .profile__pictures {
+            border: solid var(--landing-text-filter-primary) 6px;
+            border-radius: 100%;
+
+            img {
+                border-radius: 100%;
+                height: 400px;
+                width: 400px;
+                object-fit: none;
+                object-position: center;
+                background-repeat: no-repeat;
+                pointer-events: none;
+                background-position: center center;
+                overflow: hidden;
+                filter: grayscale(100%);
+
+            }
+        }
+    }
+}
+
+
+
+.header__portfolio {
+    flex-direction: row;
+    max-width: 1280px;
+    font-family: 'Supreme', sans-serif;
+    // height: 80vh;
+    align-items: center;
+    position: relative;
+
+    .header__welcome {
+        flex: 1 1 0;
+
+        .header__name {
+            font-size: 2em;
+        }
+
+        h1 {
+            font-size: 2.5em;
+        }
+
+        .hello {
+            font-size: 2.5em;
+
+        }
+
+        .highlight__text {
+            color: var(--landing-text-filter-primary);
+            font-weight: 800;
+        }
+    }
+
+}
+
+.header__portfolio__banner {
+
+    .profile__pictures {
+        margin: 2rem 0;
+        overflow: hidden;
+        border: solid var(--landing-text-filter-primary) 6px;
+
+        img {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+            background-repeat: no-repeat;
+            pointer-events: none;
+            overflow: hidden;
+            display: block;
+            filter: grayscale(100%);
+        }
+    }
+}
+
+.about__landing__section {
+    font-family: 'Amulya', sans-serif;
+
+    .about__heading {
+        font-size: 2em;
+        color: var(--landing-text-filter-primary);
+        font-weight: 500;
+    }
+
+    .code {
+        font-weight: 400;
+    }
+
+    .code__dummy {
+        padding: 1em 0;
+    }
+
+    .about__item {
+        position: relative;
+        font-size: 1em;
+
+        span {
+            position: absolute;
+            height: 3px;
+            width: 100%;
+            background-color: var(--landing-text-filter-primary);
+
+        }
+    }
+}
