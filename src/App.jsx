@@ -8,9 +8,9 @@ const App = () => {
     return (
         <Router>
             <Navbar className="top-0" />
+            <AboutPages />
             <Routes>
                 <Route path="/" element={<LandingPages />} />
-                <Route path="/about" element={<AboutPages />} />
             </Routes>
         </Router>
     );

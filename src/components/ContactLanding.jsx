@@ -4,7 +4,7 @@ import "../components/landingPagesStyled/landingpagesStyled.css";
 function ContactLanding() {
     return (
         <>
-            <div className="contact__landing__QreSt flex flex-col justify-between pt-32">
+            <div className="contact__landing__QreSt flex flex-col justify-between xl:pt-32 pt-10 text-xs xl:text-lg">
                 <div className="mail__contact__RweTs  pt-3">
                     ✉️ aprilandinanudwifirmansyah@gmail.com
                 </div>

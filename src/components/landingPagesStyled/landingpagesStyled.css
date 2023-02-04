@@ -2,30 +2,225 @@
   --landing-background-filter: #408C5E;
   --landing-text-filter-primary: #408C5E;
   --landing-head-filter-primary: #408C5E;
+  --lading-bar-filter-before: #0f4224;
+  --lading-bar-filter-before-newSkill: #055a3a;
+  --lading-bar-filter-newSkills: #0daf71;
 }
 
-@media (min-width: 1000px) {
+.header__portfolio__banner .profile__pictures {
+  padding-top: 3rem;
+}
+.header__portfolio__banner .profile__pictures::before {
+  content: "";
+  top: 4rem;
+  left: -2rem;
+  position: absolute;
+  height: 400px;
+  width: 400px;
+  z-index: -2;
+  border-radius: 50%;
+  background-color: rgba(15, 71, 38, 0.2470588235);
+}
+
+.header__portfolio__banner .profile__pictures {
+  margin: 2rem 0;
+  position: relative;
+}
+.header__portfolio__banner .profile__pictures img {
+  border: solid var(--landing-head-filter-primary) 6px;
+  border-radius: 100%;
+  margin: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  pointer-events: none;
+  overflow: hidden;
+  display: block;
+  position: relative;
+}
+
+@media (max-width: 900px) {
+  .header__portfolio__banner {
+    align-items: center;
+    display: inline-block;
+  }
+  .header__portfolio__banner .profile__pictures img {
+    height: auto;
+    width: 400px;
+  }
+  .header__portfolio .header__welcome .hello {
+    font-size: 2em;
+  }
+  .header__portfolio .header__welcome .header__name {
+    font-size: 1.5em;
+  }
+  .header__portfolio .header__welcome .highlight__text {
+    font-size: 0.9em;
+  }
+  .header__portfolio .header__welcome .highlight__xrRe {
+    font-size: 1.5em;
+  }
+  .skills__item .skill__name {
+    font-size: 0.9em;
+  }
+  .skills__item .skills__item__bar {
+    font-size: 0.7em;
+    text-align: center;
+  }
+  .skills__item .skills__item__bar .xcUiT__bar::after {
+    content: "";
+    position: absolute;
+    background-color: var(--lading-bar-filter-before);
+    height: 17px;
+    width: 15em;
+    z-index: -1;
+    left: 0;
+    border-radius: 1em;
+  }
+  .skills__item .skills__item__bar .bar__xcUL {
+    max-width: 140px;
+    position: relative;
+  }
+  .skills__item .skills__item__bar .bar__rxCs {
+    max-width: 120px;
+    position: relative;
+  }
+  .skills__item .skills__item__bar .bar__tRsa {
+    max-width: 100px;
+    position: relative;
+  }
+  .skills__item .skills__item__bar .bar__fgDa {
+    max-width: 80px;
+    position: relative;
+  }
+  .skills__item .skills__item__bar .bar__grFc {
+    max-width: 60px;
+    position: relative;
+  }
+  .skills__item .skills__item__bar .bar__Rqwq {
+    position: relative;
+    text-align: center;
+    border-radius: 1em;
+    background-color: var(--lading-bar-filter-newSkills);
+  }
+  .skills__item .skills__item__bar .bar__Rqwq::after {
+    content: "";
+    position: absolute;
+    background-color: var(--lading-bar-filter-before-newSkill);
+    height: 17px;
+    min-width: 15em;
+    z-index: -1;
+    left: 0;
+    border-radius: 1em;
+  }
+  .skills__item .skills__item__bar .bar__cssTailwindCss {
+    width: 5rem;
+    display: block;
+  }
+  .skills__item .skills__item__bar .bar__cssNode {
+    width: 3.5rem;
+    display: block;
+  }
+  .skills__item .skills__item__bar .bar__cssReactJs {
+    width: 5rem;
+    display: block;
+  }
+  .skills__item .skills__item__bar .bar__cssScss {
+    width: 8rem;
+    display: block;
+  }
+}
+@media (min-width: 900px) {
+  .header__portfolio__banner {
+    display: block;
+  }
+  .header__portfolio__banner .profile__pictures {
+    display: block;
+    margin: auto;
+  }
+  .header__portfolio__banner .profile__pictures img {
+    position: relative;
+    height: auto;
+    width: 400px;
+  }
+  .header__portfolio .header__welcome .hello {
+    font-size: 2.5em;
+  }
+  .header__portfolio .header__welcome .header__name {
+    font-size: 2em;
+  }
+  .header__portfolio .header__welcome .highlight__xrRe {
+    font-size: 2.5em;
+  }
   .header__portfolio {
     display: flex;
     flex-direction: column;
   }
-  .header__portfolio__banner .profile__pictures {
-    border: solid var(--landing-head-filter-primary) 6px;
-    border-radius: 100%;
+  .skills__item .skills__item__bar {
+    font-size: 0.7em;
   }
-  .header__portfolio__banner .profile__pictures img {
-    border-radius: 100%;
-    height: 400px;
-    width: 400px;
-    -o-object-fit: none;
-       object-fit: none;
-    -o-object-position: center;
-       object-position: center;
-    background-repeat: no-repeat;
-    pointer-events: none;
-    background-position: center center;
-    overflow: hidden;
-    filter: grayscale(100%);
+  .skills__item .skills__item__bar .xcUiT__bar::after {
+    content: "";
+    position: absolute;
+    background-color: var(--lading-bar-filter-before);
+    height: 17px;
+    width: 30em;
+    z-index: -1;
+    left: 0;
+    border-radius: 1em;
+  }
+  .skills__item .skills__item__bar .bar__xcUL {
+    width: 300px;
+    position: relative;
+  }
+  .skills__item .skills__item__bar .bar__rxCs {
+    width: 240px;
+    position: relative;
+  }
+  .skills__item .skills__item__bar .bar__tRsa {
+    width: 220px;
+    position: relative;
+  }
+  .skills__item .skills__item__bar .bar__fgDa {
+    width: 200px;
+    position: relative;
+  }
+  .skills__item .skills__item__bar .bar__grFc {
+    width: 160px;
+    position: relative;
+  }
+  .skills__item .skills__item__bar .bar__Rqwq {
+    position: relative;
+    text-align: center;
+    border-radius: 1em;
+    background-color: var(--lading-bar-filter-newSkills);
+  }
+  .skills__item .skills__item__bar .bar__Rqwq::after {
+    content: "";
+    position: absolute;
+    background-color: var(--lading-bar-filter-before-newSkill);
+    height: 17px;
+    min-width: 25em;
+    z-index: -1;
+    left: 0;
+    border-radius: 1em;
+  }
+  .skills__item .skills__item__bar .bar__cssTailwindCss {
+    width: 5rem;
+    display: block;
+  }
+  .skills__item .skills__item__bar .bar__cssNode {
+    width: 3.5rem;
+    display: block;
+  }
+  .skills__item .skills__item__bar .bar__cssReactJs {
+    width: 5rem;
+    display: block;
+  }
+  .skills__item .skills__item__bar .bar__cssScss {
+    width: 8rem;
+    display: block;
   }
 }
 .header__portfolio {
@@ -37,15 +232,6 @@
 .header__portfolio .header__welcome {
   justify-content: space-between;
   flex: 1 1 0;
-}
-.header__portfolio .header__welcome .header__name {
-  font-size: 2em;
-}
-.header__portfolio .header__welcome h1 {
-  font-size: 2.5em;
-}
-.header__portfolio .header__welcome .hello {
-  font-size: 2.5em;
 }
 .header__portfolio .header__welcome .hello span {
   -webkit-animation: wobble linear infinite;
@@ -63,23 +249,6 @@
   color: var(--landing-text-filter-primary);
   font-weight: 800;
   display: inline-block;
-}
-
-.header__portfolio__banner .profile__pictures {
-  margin: 2rem 0;
-  overflow: hidden;
-  border: solid var(--landing-head-filter-primary) 6px;
-}
-.header__portfolio__banner .profile__pictures img {
-  width: 100%;
-  height: auto;
-  -o-object-fit: cover;
-     object-fit: cover;
-  background-repeat: no-repeat;
-  pointer-events: none;
-  overflow: hidden;
-  display: block;
-  filter: grayscale(100%);
 }
 
 .about__landing__section {
@@ -110,20 +279,20 @@
   background-color: var(--landing-head-filter-primary);
 }
 
+.skills__container .skills__wrapper__cxeEt {
+  display: block;
+  flex: 1 1 0;
+}
 .skills__container .skills__heading {
   font-size: 2em;
   font-weight: 500;
   color: var(--landing-text-filter-primary);
 }
 .skills__container .skill__name {
-  font-size: 1.2em;
   position: relative;
 }
 .skills__container .skills__item {
   align-items: center;
-}
-.skills__container .skills__item .skills__item__bar {
-  height: 25px;
 }
 .skills__container .skills__item .skills__item__bar .xcUiT__bar {
   background-color: var(--landing-background-filter);
@@ -131,21 +300,6 @@
   border-radius: 1em;
   align-items: center;
   text-align: center;
-}
-.skills__container .skills__item .skills__item__bar .bar__xcUL {
-  width: 300px;
-}
-.skills__container .skills__item .skills__item__bar .bar__rxCs {
-  width: 240px;
-}
-.skills__container .skills__item .skills__item__bar .bar__tRsa {
-  width: 220px;
-}
-.skills__container .skills__item .skills__item__bar .bar__fgDa {
-  width: 200px;
-}
-.skills__container .skills__item .skills__item__bar .bar__grFc {
-  width: 160px;
 }
 
 .education__excRt .heading__education_tlxSc {

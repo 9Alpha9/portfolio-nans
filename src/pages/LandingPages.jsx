@@ -8,6 +8,7 @@ import styled from "styled-components";
 import ProjectsPages from "./ProjectsPages";
 import EducationComp from "../components/EducationComp";
 import ContactLanding from "../components/ContactLanding";
+import NewSkills from "../components/NewSkills";
 
 function LandingPages() {
     const LandingStyled = styled.div`
@@ -27,20 +28,23 @@ function LandingPages() {
     `;
     return (
         <>
-            <LandingStyled className="wrapper__header  m-auto xl:p-0 px-5">
+            <LandingStyled
+                id="home"
+                className="wrapper__header  m-auto xl:p-0 px-5"
+            >
                 <HeaderStyledLanding className="container py-3 px-8">
-                    <section className="header__portfolio">
-                        <div className="header__welcome flex flex-col">
-                            <h1 className="hello ">
+                    <section className="header__portfolio pt-20 pb-20 xl:pt-20 md:gap-10 ">
+                        <div className="header__welcome flex flex-col pt-16">
+                            <h1 className="hello">
                                 Hi
-                                <span className="animate__animated animate__wobble animate-delay-3s inline-block">
-                                    👋
+                                <span className="px-4 animate__animated animate__wobble animate-delay-3s inline-block">
+                                    ✋
                                 </span>
                             </h1>
                             <span className="header__name">
                                 My Name M. Aprilandi Nanu Dwi Firmansyah
                             </span>
-                            <h1>
+                            <h1 className="highlight__xrRe">
                                 I'm a{" "}
                                 <span className="highlight__text">
                                     Backend Web Developers
@@ -48,9 +52,12 @@ function LandingPages() {
                             </h1>
                             <ContactLanding />
                         </div>
-                        <section className="header__portfolio__banner">
+                        <section className="header__portfolio__banner align-middle">
                             <figure className="profile__pictures">
-                                <img src={profilePictures2} alt="" />
+                                <img
+                                    src={profilePictures2}
+                                    alt="Profile Pictures"
+                                />
                             </figure>
                         </section>
                     </section>
@@ -82,60 +89,67 @@ function LandingPages() {
                                 curious one, that is why i love to learn and
                                 experience new things.
                             </div>
-                            <div className="skills skills__container relative">
-                                <h3 className="skills__heading mt-6 mb-6">
-                                    Skills
-                                </h3>
-                                <div class="flex skills__item gap-12 mt-6 mb-6">
-                                    <div class="flex-none w-14 skill__name">
-                                        Laravel
+                            <div className="skills skills__container relative flex xl:flex-row lg:flex-row md:flex-row flex-col xl:gap-20 lg:gap-8">
+                                <div
+                                    id="skills"
+                                    className="skills__wrapper__cxeEt flex flex-col"
+                                >
+                                    <h3 className="skills__heading mt-6 mb-6">
+                                        👀 Skills
+                                    </h3>
+                                    <div class="flex skills__item gap-12 mt-6 mb-6">
+                                        <div class="flex-none w-12 xl:w-14 skill__name">
+                                            Laravel
+                                        </div>
+                                        <div class="flex-initial w-64 skills__item__bar">
+                                            <span className="xcUiT__bar bar__xcUL">
+                                                90%
+                                            </span>
+                                        </div>
                                     </div>
-                                    <div class="flex-initial w-64 skills__item__bar">
-                                        <span className="xcUiT__bar bar__xcUL">
-                                            90%
-                                        </span>
+                                    <div class="flex skills__item gap-12 mt-6 mb-6">
+                                        <div class="flex-none w-12 xl:w-14 skill__name m-0 p-0">
+                                            Php
+                                        </div>
+                                        <div class="flex-initial w-64 skills__item__bar">
+                                            <span className="xcUiT__bar bar__rxCs">
+                                                85%
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="flex skills__item gap-12 mt-6 mb-6">
+                                        <div class="flex-none w-12 xl:w-14 skill__name">
+                                            Javascript
+                                        </div>
+                                        <div class="flex-initial w-64 skills__item__bar">
+                                            <span className="xcUiT__bar bar__tRsa">
+                                                80%
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="flex skills__item gap-12 mt-6 mb-6">
+                                        <div class="flex-none w-12 xl:w-14 skill__name">
+                                            HTML
+                                        </div>
+                                        <div class="flex-initial w-64 skills__item__bar">
+                                            <span className="xcUiT__bar bar__fgDa">
+                                                75%
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="flex skills__item gap-12 mt-6 mb-6">
+                                        <div class="flex-none w-12 xl:w-14 skill__name">
+                                            CSS
+                                        </div>
+                                        <div class="flex-initial w-64 skills__item__bar">
+                                            <span className="xcUiT__bar bar__grFc">
+                                                65%
+                                            </span>
+                                        </div>
                                     </div>
                                 </div>
-                                <div class="flex skills__item gap-12 mt-6 mb-6">
-                                    <div class="flex-none w-14 skill__name">
-                                        Php
-                                    </div>
-                                    <div class="flex-initial w-64 skills__item__bar">
-                                        <span className="xcUiT__bar bar__rxCs">
-                                            85%
-                                        </span>
-                                    </div>
-                                </div>
-                                <div class="flex skills__item gap-12 mt-6 mb-6">
-                                    <div class="flex-none w-14 skill__name">
-                                        Javascript
-                                    </div>
-                                    <div class="flex-initial w-64 skills__item__bar">
-                                        <span className="xcUiT__bar bar__tRsa">
-                                            80%
-                                        </span>
-                                    </div>
-                                </div>
-                                <div class="flex skills__item gap-12 mt-6 mb-6">
-                                    <div class="flex-none w-14 skill__name">
-                                        HTML
-                                    </div>
-                                    <div class="flex-initial w-64 skills__item__bar">
-                                        <span className="xcUiT__bar bar__fgDa">
-                                            75%
-                                        </span>
-                                    </div>
-                                </div>
-                                <div class="flex skills__item gap-12 mt-6 mb-6">
-                                    <div class="flex-none w-14 skill__name">
-                                        CSS
-                                    </div>
-                                    <div class="flex-initial w-64 skills__item__bar">
-                                        <span className="xcUiT__bar bar__grFc">
-                                            65%
-                                        </span>
-                                    </div>
-                                </div>
+                                {/* New Skills Componentes */}
+                                <NewSkills />
                             </div>
                             <EducationComp />
                         </div>

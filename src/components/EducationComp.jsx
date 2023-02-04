@@ -9,12 +9,16 @@ function EducationComp() {
     return (
         <>
             <div className="education__excRt mt-8 mb-8">
-                <h1 className="heading__education_tlxSc">Education</h1>
-                <div className="education__item flex flex-col xl:flex-row gap-10">
+                <h1 className="heading__education_tlxSc">🧑‍💻 Education</h1>
+                <div className="education__item flex flex-col xl:flex-row md:flex-row md:gap-10 xl:gap-20 lg:gap-20">
                     <div className="schools__item flex flex-col mt-8 mb-8">
                         <div className="education__name__gtxDa flex-initial">
                             <figure className="object-cover schools__logo">
-                                <img src={DinamikaLogo} alt="" />
+                                <img
+                                    src={DinamikaLogo}
+                                    alt="Universitas Dinamika"
+                                    className="pointer-events-none"
+                                />
                             </figure>
                         </div>
                         <div className="education__item__gtxDa flex-initial align-middle pt-3">
@@ -33,7 +37,11 @@ function EducationComp() {
                     <div className="schools__item flex flex-col mt-8 mb-8">
                         <div className="education__name__gtxDa flex-initial">
                             <figure className="object-cover schools__logo">
-                                <img src={PrapancaLogo} alt="" />
+                                <img
+                                    src={PrapancaLogo}
+                                    alt="SMK Prapanca 2 Surabaya"
+                                    className="pointer-events-none"
+                                />
                             </figure>
                         </div>
                         <div className="education__item__gtxDa flex-initial align-middle pt-3">
